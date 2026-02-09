@@ -1,114 +1,157 @@
 # Uber-Sales-Report
 <img width="961" height="539" alt="Uber Sales Report" src="https://github.com/user-attachments/assets/0c2190c2-942d-43c7-88b7-5a3efe3e4564" />
 
-## 📌 Project Overview
+## 📌 Project Summary
 
-The **Uber Sales Report (2024)** is an interactive Power BI dashboard designed to analyze Uber ride data and uncover meaningful insights related to **booking volume, revenue trends, pickup location performance, and trip logistics**. The report enables stakeholders to understand demand patterns, operational efficiency, and customer behavior across different timeframes and distances.
+The **Uber Sales & Operations Dashboard (2024)** is an interactive Power BI report built to analyze ride-hailing performance across bookings, revenue, pickup locations, time periods, and trip distances.
+The dashboard enables stakeholders to identify demand patterns, revenue drivers, and operational hotspots using dynamic filters and high-impact visualizations.
 
-The dashboard is built with a **dark-themed, high-readability UI** and leverages dynamic filters to support data-driven decision-making.
+Designed with a **dark, high-contrast UI**, the report supports quick decision-making while maintaining analytical depth.
 
 ---
 
-## 🎯 Project Goal
+## 🎯 Business Objectives
 
-The primary goal of this project is to:
+This project aims to:
 
-* Analyze **Uber booking and revenue performance** for the year 2024
-* Identify **temporal demand patterns** (monthly, daily, and hourly)
+* Analyze **overall booking and revenue performance** for 2024
+* Identify **monthly, daily, and hourly demand trends**
 * Evaluate **pickup locations** based on revenue contribution
-* Understand the relationship between **trip distance and fare**
-* Provide an **interactive analytical tool** for business and operational insights
+* Understand the **relationship between trip distance and fare**
+* Provide an **interactive BI tool** for operational and strategic insights
 
 ---
 
 ## 📊 Key Performance Indicators (KPIs)
 
-| KPI                       |    Value |
-| ------------------------- | -------: |
-| **Total Bookings**        |  148.77K |
-| **Total Revenue (Value)** |      52M |
-| **Average Booking Value** |   508.30 |
-| **Average Ride Distance** | 24.64 km |
+| KPI                       | Value        |
+| ------------------------- | ------------ |
+| **Total Bookings**        | **148.77K**  |
+| **Total Revenue (Value)** | **52M**      |
+| **Average Booking Value** | **508.30**   |
+| **Average Ride Distance** | **24.64 km** |
+
+These KPIs provide a high-level snapshot of Uber’s performance for the selected period.
 
 ---
 
-## 📈 Visualizations & Metrics
+## 🧮 Core Metrics & Parameters
 
-### ⏱️ Temporal Trends
+### 📅 Date & Filtering Parameters
 
-* **Total Trips by Month** and **Total Revenue by Month** visualizations reveal clear demand fluctuations.
-* **Peak activity** is observed around **March** and **July–October**, indicating seasonal or event-driven ride demand.
-
-### 📍 Pickup Location Performance
-
-* Revenue distribution by pickup location highlights top-performing areas:
-
-  * **Barakhamba**
-  * **Khandsa**
-  * **Subhash Chowk**
-  * **Pataudi Chowk**
-  * **Badarpur**
-  * **Tughlakabad**
-* These locations consistently generate the highest revenue, making them key operational hotspots.
-
-### 📆 Booking Patterns
-
-* **Bookings by Day of the Week** remain relatively stable, suggesting consistent demand throughout the week.
-* **Bookings by Hour** show a strong surge during the **evening peak**, with the highest demand around **6:00 PM**, aligning with office commute hours.
-
-### 📏 Distance Analysis
-
-* **Bookings by Distance** illustrates how trip volumes are distributed across short, medium, and long-distance rides.
-* A **Distance vs Fare scatter plot** demonstrates a **positive correlation** between ride distance and fare value, with natural variability due to pricing factors.
-
-### 💰 Fare Buckets Analysis
-
-Average fare comparison across distance ranges:
-
-| Distance Range | Average Fare |
-| -------------- | -----------: |
-| 0–3 km         |       514.13 |
-| 3–7 km         |       500.29 |
-| 7–15 km        |       504.04 |
-| 15+ km         |       510.32 |
-
-This analysis shows relatively consistent average fares, with slight increases for longer trips.
+* **Date Range Filter:** January 1, 2024 – December 31, 2024
+* **Pickup Location Slicer:** Dynamic location-based analysis
+* **Cross-Filtering:** Enabled across all visuals for drill-down insights
 
 ---
 
-## 🛠️ Data Stack Used
+## 📈 Visual Analytics Breakdown
 
-* **Power BI** – Dashboard design and data visualization
+### ⏱️ Temporal Performance Analysis
+
+**Visuals:**
+
+* Total Trips by Month
+* Total Revenue by Month
+
+**Insights:**
+
+* Demand peaks observed in **March** and **July–October**
+* Seasonal or event-driven ride activity impacts revenue and trip volume
+* Relatively stable performance across remaining months
+
+---
+
+### 📍 Pickup Location Revenue Analysis
+
+**Visual:**
+
+* Total Revenue by Pickup Location (Bar Chart)
+
+**Top Revenue-Generating Locations:**
+
+* Barakhamba
+* Khandsa
+* Subhash Chowk
+* Pataudi Chowk
+* Badarpur
+* Tughlakabad
+
+These locations act as **revenue hotspots**, indicating high rider density and operational importance.
+
+---
+
+### 📆 Booking Pattern Analysis
+
+#### 🗓️ Bookings by Day of the Week
+
+* Demand remains **consistent across weekdays and weekends**
+* Indicates steady reliance on Uber throughout the week
+
+#### 🕒 Bookings by Hour
+
+* Strong demand surge during **evening peak hours**
+* **Highest volume around 6:00 PM**, aligning with office commute patterns
+* Morning and late-night hours show lower but steady demand
+
+---
+
+### 📏 Distance-Based Analysis
+
+#### 🚕 Total Bookings by Distance
+
+* Trips distributed across short, medium, and long-distance rides
+* Majority of bookings fall within **short to mid-range distances**
+
+#### 📉 Distance vs Fare (Scatter Plot)
+
+* Positive correlation between **trip distance and fare**
+* Fare variability reflects pricing logic, demand, and trip conditions
+
+---
+
+### 💰 Average Fare by Distance Bucket
+
+| Distance Range      | Average Fare |
+| ------------------- | ------------ |
+| **0–3 km**          | **514.13**   |
+| **3–7 km**          | **500.29**   |
+| **7–15 km**         | **504.04**   |
+| **More than 15 km** | **510.32**   |
+
+**Key Observation:**
+Average fares remain relatively consistent across distance ranges, with a slight premium for longer trips.
+
+---
+
+## 🔍 Key Business Insights
+
+* Uber demand shows **clear seasonal peaks**, especially in March and late summer
+* **Evening commute hours (around 6 PM)** are critical for maximizing ride volume
+* Revenue is **geographically concentrated**, highlighting strategic pickup locations
+* Trip distance has a **direct impact on fare**, validating pricing scalability
+* Stable weekday demand indicates strong customer dependency on Uber services
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+* **Power BI** – Interactive dashboard creation & visualization
 * **Power Query** – Data cleaning, transformation, and modeling
-* **DAX (Data Analysis Expressions)** – KPI calculations, measures, and business logic
+* **DAX (Data Analysis Expressions)** –
 
----
-
-## 🔍 Key Insights
-
-* Uber demand shows **seasonal peaks**, particularly in March and late summer to early autumn.
-* Evening hours (around **6 PM**) are the most critical for ride volume.
-* Revenue is **concentrated in specific pickup locations**, indicating strong geographic demand clusters.
-* Trip distance has a **direct influence on fare**, validating pricing scalability.
-* Stable weekday demand suggests **consistent user reliance** on Uber services.
-
----
-
-## ▶️ How to Use the Report
-
-1. Open the Power BI report file in **Power BI Desktop**.
-2. Use the **Date Range slicer** to filter data between **January 2024 and December 2024**.
-3. Apply the **Pickup Location slicer** to analyze performance by specific areas.
-4. Interact with charts and visuals to explore trends, correlations, and KPIs dynamically.
-5. Use insights to support **business decisions, operational planning, or portfolio demonstration**.
+  * KPI calculations
+  * Measures & aggregations
+  * Business logic implementation
 
 ---
 
 ## 📌 Use Cases
 
-* Portfolio project for **Data Analyst / Business Intelligence roles**
-* Urban mobility and transportation analytics
-* Revenue and demand trend analysis
-* Power BI and DAX best-practice demonstration
+* 📊 **Portfolio Project** for Data Analyst / Business Intelligence roles
+* 🚕 **Urban Mobility & Transportation Analytics**
+* 💰 **Revenue & Demand Trend Analysis**
+* 📈 **Power BI, DAX & Dashboard Design Best Practices Demonstration**
 
 ---
+
